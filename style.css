@@ -106,7 +106,8 @@ header{
     height: 680px;
     padding: 70px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
     align-items: center;
   
 }
@@ -544,7 +545,7 @@ marquee >img
 @media screen and (max-width:1200px){
     .hero-section
     {
-        padding: 10px;
+        padding: 20px;
         height: 1200px;
         display: flex;
         flex-direction: column;
@@ -589,18 +590,71 @@ marquee >img
     }
     #all-courses
     {
-        height: 1400px;
-        padding: 10px;
+        height: 1500px;
+        padding: 20px;
     }
     .card-container
     {
         height: 1250px;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
     }
     marquee > img
     {
         width: 120px;
         height: 50px;
+    }
+    #stories-sec,#hiring-partner-section
+    {
+        height: 900px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:550px)
+{
+    .course-card
+    {
+        width: 320px;
+        height: 440px;
+        padding: 10px;
+        line-height: 20px;
+    }
+    .sub-title 
+    {
+        margin:10px 0px 5px 0px;
+    }
+    .sub-title > p{
+        padding: 5px;
+        font-size: 12px;
+       
+    }
+    .course-card > p
+    {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .more-rows
+    {
+        margin-top: 0px;
+        height: 40px;
+    }
+    .more-rows > p
+    {
+        padding-left: 7px;
+        font-size: 12px;
+        line-height: 10px;
+        
+       
+    }
+    .more-details
+    {
+        margin-top: 10px;
+    }
+    .more-details > div
+    {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
     }
 }
